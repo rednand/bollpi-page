@@ -4,14 +4,12 @@ header {
     color: #ffffff;
 }
 
-H1 {
+h1 {
     font-family: 'Ibarra Real Nova';
     font-style: normal;
     font-weight: 400;
     font-size: 157px;
     line-height: 196px;
-    display: flex;
-    align-items: center;
     letter-spacing: -0.05em;
 }
 
