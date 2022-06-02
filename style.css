@@ -1,206 +1,288 @@
 #background {
-    position: absolute;
-    top: 90%;
-    width: 90%;
-    left: 5%;
-}
-
-header {
-    background-image: url('./assets/background-header.png');
+    background-image: url(./assets/Vector\ 1.svg);
+    background-position-x: 50%;
+    background-position-y: 150%;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    height: auto;
+  }
+  
+  header {
     height: 110vh;
     color: #ffffff;
-}
-
-h1 {
-    font-family: 'Ibarra Real Nova';
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.9)
+    );
+  }
+  .circle {
+    margin: 0 auto;
+    background-color: #ffffff;
+    display: block;
+    border: 2px solid rgb(254, 254, 254);
+    border-radius: 50%;
+    height: 80px;
+    top: 70%;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 110vh;
+    background-image: url("./assets/background-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  header nav {
+    padding: 1% 5%;
+  }
+  
+  .text-header-left {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 2%;
+  }
+  
+  h1 {
+    font-family: "Ibarra Real Nova";
     font-style: normal;
     font-weight: 400;
-    font-size: 157px;
+    font-size: 10vw;
     line-height: 196px;
     letter-spacing: -0.05em;
-}
-
-h2 {
-    font-family: 'Ibarra Real Nova';
-    color: #C49F41;
+    margin: 5% 0 0;
+  }
+  
+  h2 {
+    font-family: "Ibarra Real Nova";
+    color: #c49f41;
     font-style: normal;
     font-weight: 400;
-    font-size: 90px;
+    font-size: 5vw;
     line-height: 112px;
     display: flex;
     align-items: center;
     letter-spacing: -0.05em;
-}
-
-button {
-    color: #C39F41;
-    border: 2px #C49F41 solid;
-    padding: .5vw 2vw ;
+  }
+  
+  .text-header {
+    width: 25%;
+    margin: 10%;
+    font-size: 1vw;
+    line-height: 30px;
+    letter-spacing: -0.05rem;
+    justify-content: start;
+    text-align: justify;
+  }
+  button {
+    color: #c39f41;
+    border: 2px #c49f41 solid;
+    padding: 0.5vw 2vw;
     background-color: #ffffff;
-}
-
-.nav-link {
-    color: black;
+    z-index: 1;
+    width: 15vw;
+    transition: 0.5s;
+  }
+  
+  button:hover {
+    background: #c39f41 url(./assets/pixel2.png);
+    transition-delay: 0.2s;
+    background-size: 180px;
+    animation: animate 0.8s steps(8) forwards;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-y: 0;
+    }
+    100% {
+      background-position-y: -480px;
+    }
+  }
+  
+  .nav-link {
     height: 2rem;
-}
-
-.image-logo {
+    color: #ffffff;
+  }
+  
+  .image-logo {
     width: 100px;
-}
-
-.bollpi-section {
+  }
+  
+  .bollpi-section {
     margin: 1%;
     height: 80vh;
-
-}
-
-.bollpi-section-2 {
+  }
+  
+  .bollpi-section-2 {
     margin: 3%;
     height: 60vh;
-}
-
-.text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
+  }
+  
+  .bollpi-text {
+    width: 60%;
+  }
+  
+  .text {
+    font-size: 1vw;
     line-height: 30px;
-    display: flex;
-    align-items: center;
     letter-spacing: -0.03em;
     color: #111111;
-    margin: 8% 0;
-}
-
-.text-bollpi-section {
-    width: 50%;
-    margin-left: 11%;
-}
-
-.img-table {
+    margin: 5% 0;
+  }
+  
+  .text-bollpi-section {
+    width: 60%;
+    height: 50vh;
+    margin-left: 8%;
+  }
+  
+  .img-table {
     width: 40%;
-    margin-left: -2%;
+    margin-left: -18%;
     margin-top: 2%;
-
-}
-
-.img-bathroom {
+  }
+  
+  .img-bathroom {
     width: 50%;
     display: flex;
     justify-content: center;
     margin: auto;
-}
-
-.img-bathroom-imagem {
+  }
+  
+  .img-bathroom-imagem {
     width: 70%;
-}
-
-.produtos-card {
+  }
+  
+  .produtos-card {
     border: none;
     width: 65%;
     top: 15%;
     left: 50%;
-}
-
-.card {
+  }
+  
+  .card {
     height: 50vh;
     align-items: center;
     text-align: center;
-}
-
-.img-produtos {
+  }
+  
+  .img-produtos {
     width: 60vw;
     height: 90vh;
     margin-left: -10%;
-}
-
-.back-ambientes {
+  }
+  
+  .back-ambientes {
     width: 100%;
     background-image: url(./assets/background-envirolment.png);
-}
-
-.img-ambientes {
+  }
+  
+  .img-ambientes {
     width: 58rem;
     margin: 0;
-}
-
-.fornecedores {
-    margin-left: 15%;
-    margin-top: 8%;
-}
-
-.fornecedores-text {
+  }
+  
+  .fornecedores {
+    margin: 5%;
+  }
+  
+  .fornecedores-text {
     width: 40%;
     margin: auto;
-}
-
-.logo-empresas {
-    margin-top: 10%;
-    margin-left: 20%;
-}
-
-.forn-img {
+  }
+  
+  .logo-empresas {
+    margin-top: 5%;
+  }
+  
+  .forn-img {
     z-index: 100;
-}
-
-.fornecedores-imagens {
+    margin-left: 4%;
+  }
+  
+  .fornecedores-imagens {
     width: 100%;
-    margin-top: 1%;
-}
-
-.div-img2 {
+    margin-top: 5%;
+  }
+  
+  .div-img2 {
     top: 25%;
-    left: 35%;
+    left: 25%;
     width: 75%;
-}
-
-.img {
-    margin-left: -18%;
-}
-
-.img2 {
-    opacity: 0.5;
-    opacity: .5;
+  }
+  
+  .img {
+    margin-left: 0%;
+    width: 65%;
+  }
+  
+  .img2 {
     width: 100%;
-    height: 35rem;
-    z-index: 99;
-}
-
-footer {
+    opacity: 0.5;
+    height: 30rem;
+    z-index: 999;
+  }
+  
+  footer {
     position: relative;
-    margin: 22% 0 0;
+    margin: 12% 0 0;
     height: 10vh;
-}
-
-footer img {
+  }
+  
+  footer img {
     padding: 1% 10%;
-}
-
-.footer-icons {
+  }
+  
+  .footer-icons {
     position: absolute;
     right: 12%;
-    bottom: 16vh;
+    bottom: 5vh;
     background-color: #ffffff;
     padding: 1vw;
-    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, .6);
-}
-
-.copyright {
+    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.6);
+  }
+  
+  .copyright {
     margin: 5% 10% 5%;
     padding-bottom: 1%;
-}
-
-.footer-text {
+  }
+  
+  .footer-text {
     margin: 0 10%;
-}
-
-.text-footer {
-    font-family: 'Montserrat';
+  }
+  
+  .text-footer {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.2vw;
     line-height: 45px;
     display: flex;
     align-items: center;
     letter-spacing: -0.03em;
     color: #111111;
-}
+  }
+  
+  @media (max-width: 1200px) {
+    #background{
+      background-image: none;
+    }
+    .bollpi-section {
+      width: auto;
+    }
+    footer {
+      margin-top: 50vh;
+    }
+  }
+  

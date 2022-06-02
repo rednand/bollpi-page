@@ -9,17 +9,16 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
-    <meta name="description" content="Bollpi Website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">    <meta name="description" content="Bollpi Website">
     <meta name="keywords" content="Bollpi, design de ambientes">
     <meta name="author" content="Bollpi">
     <title>Document</title>
 </head>
 
-<body>
-    <img id="background" src="./assets/Vector 1.svg" alt="">
+<body  id="background">
     <header>
         <nav>
             <ul class="nav justify-content-start">
@@ -48,11 +47,11 @@
                 </li>
             </ul>
         </nav>
-        <div class="overflow-hidden p-3 p-md-5 m-md-3 text-center">
-            <div class="">
+        <div class="overflow-hidden text-center position-relative">
+            <div >
                 <h1 class=" fw-normal justify-content-center">TENDÊNCIAS</h1>
-                <p class="float-start d-flex align-items-center"
-                    style="width: 25%; margin: 15% 5%;font-size: 18px;line-height: 30px;letter-spacing: -0.05em;">
+               <div class="circle position-absolute start-50 translate-middle"><a href=""> <img src="./assets/seta.svg" alt=""></a></div>
+                <p class="float-start d-flex align-items-center text-header text-header-left">
                     Valorize ambientes, tendo as
                     melhores e inovadoras soluções
                     para traduzir sua
@@ -62,30 +61,31 @@
                 </p>
             </div>
         </div>
+        
     </header>
     <main class="container-fluid">
         <section class="row bollpi-section">
             <div class="col-6 img-bathroom">
                 <img class="img-bathroom-imagem img-fluid" src="./assets/bathroom.png" alt="...">
             </div>
-
-            <div class="col-6">
-                <div class="col-6 my-5">
-                    <h2 class="display-2">A BOLLPI</h2>
+            <div class="col-6 ">
+                <div class="col-6 bollpi-text my-5">
+                    <h2>A BOLLPI</h2>
                     <p class="text fw-normal">Somos um dos mais completos Showrooms da cidade de São
                         Paulo! A Bollpi está há mais de 40 anos no mercado, conduzindo um enorme legado de
                         confiabilidade aos nossos e transparência aos nossos fornecedores.
                     </p>
                     <p class="text fw-normal">
                         Trabalhamos com diversas marcas nacionais e do exterior, que dispõem de conceitos modernos e
-                        materiais de qualidade.</p>
-                    <button>Ver mais sobre</button>
+                        materiais de qualidade.
+                    </p>
+                    <button type="button" id="button" class="button">Ver mais sobre</button>
                 </div>
             </div>
         </section>
         <section class="row my-5 bollpi-section-2">
-            <div class="col-6">
-                <div class="col-md-8 text-bollpi-section my-5">
+            <div class="col-8">
+                <div class="text-bollpi-section">
                     <p class="text text-break">Elabore de modo customizado a sua decoração! Com um
                         atendimento personalizado, trazemos as melhores soluções, para que você possa desfrutar de
                         ambientes que estimulam as melhores sensações em sua residência.</p>
@@ -99,11 +99,12 @@
                         abaixo para nos contatar e ver as últimas tendências em revestimentos, louças, metais,
                         acessórios, entre outros.
                     </p>
-                    <button>Solicitar orçamento</button>
+                    <button type="button">Solicitar orçamento</button>
 
                 </div>
             </div>
-            <div class="col-6 img-table"> <img src="./assets/plat.png" class="float-end" alt="...">
+            <div class="col-4 img-table"> <img src="./assets/plat.png" class="float-end 
+                img-fluid" alt="...">
             </div>
         </section>
 
@@ -137,7 +138,7 @@
                 </div>
                 <div class="row">
                     <div class="col my-5">
-                        <img class="img-ambientes" src="./assets/envirolment-foto.png" alt="...">
+                        <img class="img-ambientes img-fluid" src="./assets/envirolment-foto.png" alt="...">
                     </div>
                 </div>
             </div>
@@ -146,7 +147,7 @@
         <section class="fornecedores container ">
             <div class="row">
                 <div class="fornecedores-text col-4">
-                    <h2 class="display-2 fw-normal ">FORNECEDORES</h2>
+                    <h2>FORNECEDORES</h2>
                     <p class="text fw-normal">Atuamos com diversas empresas e fornecedores parceiros, de produtos
                         direcionados a reforma, construção e decoração de ambientes, levando o que possui de mais
                         moderno no conceito de showrooms voltados para produtos residenciais.
@@ -172,7 +173,7 @@
 
             </div>
 
-            <div class="fornecedores-imagens row position-relative p-5 mx-5">
+            <div class="fornecedores-imagens row position-relative">
                 <div class="forn-img">
                     <img class="img-fluid img" src="./assets/fornecedores.png" alt="...">
                 </div>
