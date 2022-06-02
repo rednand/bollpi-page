@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./reset.css">
@@ -12,21 +12,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">    <meta name="description" content="Bollpi Website">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="description" content="Bollpi Website">
     <meta name="keywords" content="Bollpi, design de ambientes">
     <meta name="author" content="Bollpi">
     <title>Document</title>
 </head>
 
-<body  id="background">
+<body id="background">
     <header>
         <nav>
-            <ul class="nav justify-content-start">
+            <ul class="nav col-sm-6 col-md-12 col-xl-12">
                 <li class="nav-item">
                     <a class="nav-link" href="#"><img src="./assets/logo-Bollpi.png" alt="Logo da Bollpi"></a>
                 </li>
             </ul>
-            <ul class="nav justify-content-end">
+            <ul class="nav col-sm-6 col-md-12 col-xl-12 justify-content-end nav-header">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">HOME</a>
                 </li>
@@ -43,14 +44,15 @@
                     <a class="nav-link" href="#">FORNECEDORES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><button>CONTATO</button></a>
+                    <a class="nav-link" href="#"><button id="nav-contato" href="/contato">CONTATO</button></a>
                 </li>
             </ul>
         </nav>
         <div class="overflow-hidden text-center position-relative">
-            <div >
+            <div>
                 <h1 class=" fw-normal justify-content-center">TENDÊNCIAS</h1>
-               <div class="circle position-absolute start-50 translate-middle"><a href=""> <img src="./assets/seta.svg" alt=""></a></div>
+                <div class="circle position-absolute start-50 translate-middle"><a href=""> <img src="./assets/seta.svg"
+                            alt=""></a></div>
                 <p class="float-start d-flex align-items-center text-header text-header-left">
                     Valorize ambientes, tendo as
                     melhores e inovadoras soluções
@@ -61,15 +63,15 @@
                 </p>
             </div>
         </div>
-        
+
     </header>
     <main class="container-fluid">
-        <section class="row bollpi-section">
-            <div class="col-6 img-bathroom">
+        <section class="row bollpi-section d-flex justify-content-around">
+            <div class="col-sm-12 col-md-6 col-xl-6 img-bathroom">
                 <img class="img-bathroom-imagem img-fluid" src="./assets/bathroom.png" alt="...">
             </div>
-            <div class="col-6 ">
-                <div class="col-6 bollpi-text my-5">
+            <div class="col-sm-12 col-md-6 col-xl-6">
+                <div class="col-md-6 col-sm-12  bollpi-text my-5">
                     <h2>A BOLLPI</h2>
                     <p class="text fw-normal">Somos um dos mais completos Showrooms da cidade de São
                         Paulo! A Bollpi está há mais de 40 anos no mercado, conduzindo um enorme legado de
@@ -79,12 +81,13 @@
                         Trabalhamos com diversas marcas nacionais e do exterior, que dispõem de conceitos modernos e
                         materiais de qualidade.
                     </p>
-                    <button type="button" id="button" class="button">Ver mais sobre</button>
+                    <button type="button">Ver mais sobre</button>
                 </div>
             </div>
         </section>
+
         <section class="row my-5 bollpi-section-2">
-            <div class="col-8">
+            <div class="col-sm-12 col-md-6 col-xl-6 ">
                 <div class="text-bollpi-section">
                     <p class="text text-break">Elabore de modo customizado a sua decoração! Com um
                         atendimento personalizado, trazemos as melhores soluções, para que você possa desfrutar de
@@ -100,15 +103,14 @@
                         acessórios, entre outros.
                     </p>
                     <button type="button">Solicitar orçamento</button>
-
                 </div>
             </div>
-            <div class="col-4 img-table"> <img src="./assets/plat.png" class="float-end 
-                img-fluid" alt="...">
+            <div class="col-sm-12 col-md-6 col-xl-6 img-table">
+                <img src="./assets/plat.png" class="img-fluid" alt="...">
             </div>
         </section>
 
-        <section class="d-flex justify-content-center mx-auto p-5 bg-light">
+        <section class="d-flex justify-content-center mx-auto p-5 bg-light section-produtos">
             <div class="row position-relative ">
                 <div class="col my-5">
                     <img class="float-start img-fluid img-produtos" src="./assets/products.png" alt="...">
@@ -130,36 +132,36 @@
         </section>
 
         <section class="d-flex justify-content-center p-4 back-ambientes">
-            <div class="col-6">
+            <div class="col-12">
                 <div class="row mx-auto my-5 text-center">
                     <h2 class="display-2 my-1 fw-normal justify-content-center">AMBIENTES</h2>
                     <p class="lead fw-normal">Projetos assinados por arquitetos renomados no ramo!
                     </p>
                 </div>
                 <div class="row">
-                    <div class="col my-5">
+                    <div class="col-sm-12 col-md-6 col-xl-6 justify-content-center mx-auto">
                         <img class="img-ambientes img-fluid" src="./assets/envirolment-foto.png" alt="...">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="fornecedores container ">
+        <section class="container-fluid">
             <div class="row">
-                <div class="fornecedores-text col-4">
+                <div class="fornecedores-text col-sm-12 col-md-8 col-xl-6">
                     <h2>FORNECEDORES</h2>
                     <p class="text fw-normal">Atuamos com diversas empresas e fornecedores parceiros, de produtos
                         direcionados a reforma, construção e decoração de ambientes, levando o que possui de mais
                         moderno no conceito de showrooms voltados para produtos residenciais.
                     </p>
-                    <p class="text">
+                    <p class="text fw-normal">
                         Inclua os melhores pisos cimentícios, porcelanatos premium em formatos diferenciados, além de
                         revestimentos exclusivos, metais e louças com tecnologias italiana e alemã e uma completa linha
                         de SPA's e acessórios que vão te encantar.
                     </p>
                     <button>Ver Fornecedores</button>
                 </div>
-                <div class="col-4 logo-empresas">
+                <div class="logo-empresas col-sm-7 col-md-8 mx-auto col-xl-4">
                     <img src="./assets/portinari.png" alt="">
                     <img src="./assets/castelato.png" alt="">
                     <img src="./assets/crissair.png" alt="">
@@ -202,13 +204,13 @@
 
         <div class="container footer-text">
             <div class="row">
-                <p class="col-6 text-footer">
+                <p class="text-footer col-sm-12 col-md-12 col-xl-6 ">
                     A Bollpi possui 40 anos no mercado e um incrível showroom,
                     localizado no Jardim Anália Franco. Trabalhando com diversas marcas
                     nacionais e internacionais, das áreas de revestimentos premium.
                 </p>
 
-                <nav class="col-6 nav justify-content-end">
+                <nav class="nav nav-footer col-sm-12 col-md-12 col-xl-6">
                     <ul class="row ">
                         <li class="col-auto"><a href="#" class="">Home</a></li>
                         <li class="col-auto"><a href="#" class="">A Bollpi</a></li>
@@ -224,7 +226,7 @@
         <div class="copyright d-flex justify-content-between">
             <p>&copy;Copyright 2021 - Bollpi - Todos os Direitos Reservados</p>
             <p>
-                Desenvolvido por <img src="" alt="" />
+                Desenvolvido por <img src="./assets/" alt="" />
             </p>
         </div>
     </footer>
