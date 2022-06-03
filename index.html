@@ -16,10 +16,10 @@
     <meta name="description" content="Bollpi Website">
     <meta name="keywords" content="Bollpi, design de ambientes">
     <meta name="author" content="Bollpi">
-    <title>Document</title>
+    <title>Bollpi</title>
 </head>
 
-<body id="background">
+<body>
     <header>
         <nav>
             <ul class="nav col-sm-6 col-md-12 col-xl-12">
@@ -27,7 +27,7 @@
                     <a class="nav-link" href="#"><img src="./assets/logo-Bollpi.png" alt="Logo da Bollpi"></a>
                 </li>
             </ul>
-            <ul class="nav col-sm-6 col-md-12 col-xl-12 justify-content-end nav-header">
+            <ul class="nav col-sm-12 col-md-12 col-xl-12 justify-content-end nav-header">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">HOME</a>
                 </li>
@@ -49,29 +49,45 @@
             </ul>
         </nav>
         <div class="overflow-hidden text-center position-relative">
-            <div>
-                <h1 class=" fw-normal justify-content-center">TENDÊNCIAS</h1>
-                <div class="circle position-absolute start-50 translate-middle"><a href=""> <img src="./assets/seta.svg"
-                            alt=""></a></div>
-                <p class="float-start d-flex align-items-center text-header text-header-left">
-                    Valorize ambientes, tendo as
-                    melhores e inovadoras soluções
-                    para traduzir sua
-                    identidade nas principais
-                    tendências em pisos, louças, acessórios e muitos outros revestimentos que tornarão seu projeto
-                    exclusivo!
-                </p>
+            <h1 class="position-relative fw-normal justify-content-center">TENDÊNCIAS</h1>
+            <div class="position-absolute redes">
+                <ul class="row d-flex">
+                    <li class="col-auto">- NOSSAS REDES</li>
+                    <li class="col-auto">
+                        <a href=""><img class="img-fluid" src="./assets/facewhite.svg" alt="" /></a>
+                    </li>
+                    <li class="col-auto">
+                        <a href=""><img src="./assets/instagram.svg" alt="" /></a>
+                    </li>
+                    <li class="col-auto">
+                        <a href=""><img src="./assets/whatwhite.png" alt="" /></a>
+                    </li>
+                </ul>
             </div>
+            <div class="bollpi-border-absolute position-absolute"></div>
+
+            <div class="circle position-absolute">
+                <a href="./index.html"> <img src="./assets/seta.svg" alt="">
+                </a></div>
+            <p class="float-start d-flex align-items-center text-header text-header-left">
+                Valorize ambientes, tendo as
+                melhores e inovadoras soluções
+                para traduzir sua
+                identidade nas principais
+                tendências em pisos, louças, acessórios e muitos outros revestimentos que tornarão seu projeto
+                exclusivo!
+            </p>
+        </div>
         </div>
 
     </header>
     <main class="container-fluid">
-        <section class="row bollpi-section d-flex justify-content-around">
+        <section class="row bollpi-section d-flex justify-content-around position-relative">
             <div class="col-sm-12 col-md-6 col-xl-6 img-bathroom">
                 <img class="img-bathroom-imagem img-fluid" src="./assets/bathroom.png" alt="...">
             </div>
-            <div class="col-sm-12 col-md-6 col-xl-6">
-                <div class="col-md-6 col-sm-12  bollpi-text my-5">
+            <div class="col-sm-12 col-md-6 col-xl-6 bollpi-border">
+                <div class="col-md-6 col-sm-12 bollpi-text my-5">
                     <h2>A BOLLPI</h2>
                     <p class="text fw-normal">Somos um dos mais completos Showrooms da cidade de São
                         Paulo! A Bollpi está há mais de 40 anos no mercado, conduzindo um enorme legado de
@@ -86,7 +102,7 @@
             </div>
         </section>
 
-        <section class="row my-5 bollpi-section-2">
+        <section class="row bollpi-section-2">
             <div class="col-sm-12 col-md-6 col-xl-6 ">
                 <div class="text-bollpi-section">
                     <p class="text text-break">Elabore de modo customizado a sua decoração! Com um
@@ -110,28 +126,30 @@
             </div>
         </section>
 
-        <section class="d-flex justify-content-center mx-auto p-5 bg-light section-produtos">
-            <div class="row position-relative ">
-                <div class="col my-5">
-                    <img class="float-start img-fluid img-produtos" src="./assets/products.png" alt="...">
-                </div>
-                <div class="produtos-card position-absolute">
-                    <div class="card">
-                        <div class="card-body">
-                            <h2 class="display-2 card-title justify-content-center">PRODUTOS</h2>
-                            <p class="text">Tenha acesso a diversas linhas de produtos e veja quais têm a sua cara!
-                                Clique no botão abaixo para conferir e incorporar os melhores acabamentos que
-                                transformarão seus projetos.
-                            </p>
-                            <button>Ver produtos</button>
-
+        <section class="bg-light">
+            <div class="border-produtos">
+                <div class="row position-relative ">
+                    <div class="col">
+                        <img class="float-start img-fluid img-produtos" src="./assets/products.png" alt="...">
+                    </div>
+                    <div class="produtos-card position-absolute">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="display-2 card-title justify-content-center">PRODUTOS</h2>
+                                <p class="text">Tenha acesso a diversas linhas de produtos e veja quais têm a sua cara!
+                                    Clique no botão abaixo para conferir e incorporar os melhores acabamentos que
+                                    transformarão seus projetos.
+                                </p>
+                                <button>Ver produtos</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="d-flex justify-content-center p-4 back-ambientes">
+        <section class="d-flex justify-content-center back-ambientes position-relative">
+            <div class="border-ambientes position-absolute"></div>
             <div class="col-12">
                 <div class="row mx-auto my-5 text-center">
                     <h2 class="display-2 my-1 fw-normal justify-content-center">AMBIENTES</h2>
@@ -143,10 +161,14 @@
                         <img class="img-ambientes img-fluid" src="./assets/envirolment-foto.png" alt="...">
                     </div>
                 </div>
+                <img class="mx-auto d-flex justify-content-center m-4 signature" src="./assets/signature.png" alt="">
+                <button class="mx-auto d-flex justify-content-center m-4">Ver Ambientes</button>
+                <div class="border-ambientes-2 position-absolute"></div>
             </div>
         </section>
 
-        <section class="container-fluid">
+        <section class="container-fluid position-relative">
+            <div class="fornecedores-border position-absolute"></div>
             <div class="row">
                 <div class="fornecedores-text col-sm-12 col-md-8 col-xl-6">
                     <h2>FORNECEDORES</h2>
@@ -187,7 +209,9 @@
 
 
     </main>
-    <footer class="container-fluid">
+
+    <footer class="container-fluid position-relative">
+        <div class="border-footer position-absolute"></div>
         <img class="img-footer" src="./assets/bollpi-logo-preto.png" alt="" />
 
         <ul class="footer-icons">
