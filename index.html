@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
         <nav>
             <ul class="nav col-sm-6 col-md-12 col-xl-12">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="./assets/logo-Bollpi.png" alt="Logo da Bollpi"></a>
+                    <a class="nav-link" href="#"><img src="./assets/imagens/bollpiLogo.svg" alt="Logo da Bollpi"></a>
                 </li>
             </ul>
             <ul class="nav col-sm-12 col-md-12 col-xl-12 justify-content-end nav-header">
@@ -54,21 +54,22 @@
                 <ul class="row d-flex">
                     <li class="col-auto">- NOSSAS REDES</li>
                     <li class="col-auto">
-                        <a href=""><img class="img-fluid" src="./assets/facewhite.svg" alt="" /></a>
+                        <a href=""><img class="img-fluid" src="./assets/imagens/facewhite.svg" alt="" /></a>
                     </li>
                     <li class="col-auto">
-                        <a href=""><img src="./assets/instagram.svg" alt="" /></a>
+                        <a href=""><img src="./assets/imagens/instagram.svg" alt="" /></a>
                     </li>
                     <li class="col-auto">
-                        <a href=""><img src="./assets/whatwhite.png" alt="" /></a>
+                        <a href=""><img src="./assets/imagens/whatswhite.svg" alt="" /></a>
                     </li>
                 </ul>
             </div>
             <div class="bollpi-border-absolute position-absolute"></div>
 
             <div class="circle position-absolute">
-                <a href="./index.html"> <img src="./assets/seta.svg" alt="">
-                </a></div>
+                <a href="#abollpi"> <img src="./assets/imagens/seta.svg" alt="">
+                </a>
+            </div>
             <p class="float-start d-flex align-items-center text-header text-header-left">
                 Valorize ambientes, tendo as
                 melhores e inovadoras soluções
@@ -78,15 +79,15 @@
                 exclusivo!
             </p>
         </div>
-        </div>
-
     </header>
     <main class="container-fluid">
-        <section class="row bollpi-section d-flex justify-content-around position-relative">
-            <div class="col-sm-12 col-md-6 col-xl-6 img-bathroom">
-                <img class="img-bathroom-imagem img-fluid" src="./assets/bathroom.png" alt="...">
+        <section id="abollpi" class="row bollpi-section d-flex justify-content-around position-relative">
+            <div class="col-sm-12 col-md-6 col-xl-6 bollpi-section-imagem">
+                <img class="bollpi-section-imagem1 img-fluid" src="./assets/imagens/bathroom.png" alt="...">
             </div>
-            <div class="col-sm-12 col-md-6 col-xl-6 bollpi-border">
+            <div class="bollpi-border position-absolute"></div>
+            <div class="bollpi-border-bottom position-absolute"></div>
+            <div class="col-sm-12 col-md-6 col-xl-6 bollpi-section-text">
                 <div class="col-md-6 col-sm-12 bollpi-text my-5">
                     <h2>A BOLLPI</h2>
                     <p class="text fw-normal">Somos um dos mais completos Showrooms da cidade de São
@@ -104,7 +105,7 @@
 
         <section class="row bollpi-section-2">
             <div class="col-sm-12 col-md-6 col-xl-6 ">
-                <div class="text-bollpi-section">
+                <div class="bollpi-section-2-text">
                     <p class="text text-break">Elabore de modo customizado a sua decoração! Com um
                         atendimento personalizado, trazemos as melhores soluções, para que você possa desfrutar de
                         ambientes que estimulam as melhores sensações em sua residência.</p>
@@ -121,16 +122,17 @@
                     <button type="button">Solicitar orçamento</button>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-xl-6 img-table">
-                <img src="./assets/plat.png" class="img-fluid" alt="...">
+            <div class="col-sm-12 col-md-6 col-xl-6 bollpi-section-imagem2">
+                <img src="./assets/imagens/plat.png" class="img-fluid" alt="...">
             </div>
         </section>
 
         <section class="bg-light">
-            <div class="border-produtos">
+            <div class="produtos-border">
                 <div class="row position-relative ">
                     <div class="col">
-                        <img class="float-start img-fluid img-produtos" src="./assets/products.png" alt="...">
+                        <img class="float-start img-fluid produtos-section-imagem" src="./assets/imagens/products.png"
+                            alt="...">
                     </div>
                     <div class="produtos-card position-absolute">
                         <div class="card">
@@ -148,8 +150,8 @@
             </div>
         </section>
 
-        <section class="d-flex justify-content-center back-ambientes position-relative">
-            <div class="border-ambientes position-absolute"></div>
+        <section class="d-flex justify-content-center ambientes-section position-relative">
+            <div class="ambientes-border position-absolute"></div>
             <div class="col-12">
                 <div class="row mx-auto my-5 text-center">
                     <h2 class="display-2 my-1 fw-normal justify-content-center">AMBIENTES</h2>
@@ -158,12 +160,13 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-xl-6 justify-content-center mx-auto">
-                        <img class="img-ambientes img-fluid" src="./assets/envirolment-foto.png" alt="...">
+                        <img class="ambientes-section-imagem img-fluid" src="./assets/imagens/envirolment-foto.png"
+                            alt="...">
                     </div>
                 </div>
-                <img class="mx-auto d-flex justify-content-center m-4 signature" src="./assets/signature.png" alt="">
+                <img class="mx-auto d-flex justify-content-center m-4" src="./assets/imagens/signature.svg" alt="">
                 <button class="mx-auto d-flex justify-content-center m-4">Ver Ambientes</button>
-                <div class="border-ambientes-2 position-absolute"></div>
+                <div class="ambientes-border-2 position-absolute"></div>
             </div>
         </section>
 
@@ -184,25 +187,25 @@
                     <button>Ver Fornecedores</button>
                 </div>
                 <div class="logo-empresas col-sm-7 col-md-8 mx-auto col-xl-4">
-                    <img src="./assets/portinari.png" alt="">
-                    <img src="./assets/castelato.png" alt="">
-                    <img src="./assets/crissair.png" alt="">
-                    <img src="./assets/dune.png" alt="">
-                    <img src="./assets/dune.png" alt="">
-                    <img src="./assets/kohler.png" alt="">
-                    <img src="./assets/castelato.png" alt="">
-                    <img src="./assets/dune.png" alt="">
-                    <img src="./assets/portinari.png" alt="">
+                    <img src="./assets/imagens/portinari.svg" alt="">
+                    <img src="./assets/imagens/castelato.svg" alt="">
+                    <img src="./assets/imagens/crissair.svg" alt="">
+                    <img src="./assets/imagens/dune.svg" alt="">
+                    <img src="./assets/imagens/evol.svg" alt="">
+                    <img src="./assets/imagens/kohler.svg" alt="">
+                    <img src="./assets/imagens/castelato.svg" alt="">
+                    <img src="./assets/imagens/dune.svg" alt="">
+                    <img src="./assets/imagens/portinari.svg" alt="">
                 </div>
 
             </div>
 
             <div class="fornecedores-imagens row position-relative">
-                <div class="forn-img">
-                    <img class="img-fluid img" src="./assets/fornecedores.png" alt="...">
+                <div class="fornecedores-section-imagem">
+                    <img class="img-fluid fornecedores-imagem" src="./assets/imagens/fornecedores.png" alt="...">
                 </div>
-                <div class="position-absolute div-img2">
-                    <img class="img-fluid img2" src="./assets/fornecedores.png" alt="...">
+                <div class="position-absolute fornecedores-section-imagem2">
+                    <img class="img-fluid fornecedores-imagem2" src="./assets/imagens/fornecedores.png" alt="...">
                 </div>
             </div>
         </section>
@@ -211,18 +214,18 @@
     </main>
 
     <footer class="container-fluid position-relative">
-        <div class="border-footer position-absolute"></div>
-        <img class="img-footer" src="./assets/bollpi-logo-preto.png" alt="" />
+        <div class="footer-border position-absolute"></div>
+        <img class="footer-imagem" src="./assets/imagens/bollpi-logo-preto.png" alt="" />
 
         <ul class="footer-icons">
             <li>
-                <a href=""><img class="" src="./assets/face.svg" alt="" /></a>
+                <a href=""><img class="" src="./assets/imagens/face.svg" alt="" /></a>
             </li>
             <li>
-                <a href=""><img class="i" src="./assets/insta.svg" alt="" /></a>
+                <a href=""><img class="i" src="./assets/imagens/insta.svg" alt="" /></a>
             </li>
             <li>
-                <a href=""><img class="" src="./assets/whats.svg" alt="" /></a>
+                <a href=""><img class="" src="./assets/imagens/whats.svg" alt="" /></a>
             </li>
         </ul>
 
@@ -249,8 +252,8 @@
 
         <div class="copyright d-flex justify-content-between">
             <p>&copy;Copyright 2021 - Bollpi - Todos os Direitos Reservados</p>
-            <p>
-                Desenvolvido por <img src="./assets/" alt="" />
+            <p> Desenvolvido por <a href="https://www.noweb.io/"><img src="./assets/imagens/iconeNoweb.svg"
+                        alt="" /></a>
             </p>
         </div>
     </footer>
